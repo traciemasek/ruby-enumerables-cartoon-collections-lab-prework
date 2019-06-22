@@ -12,8 +12,5 @@ end
 
 def find_the_cheese(cheeses)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  if cheeses.include 
-  else
-    return nil
-  end
+  cheeses.find { |el| el == cheese_types[0] || el == cheese_types[1] || el == cheese_types[2] }
 end
